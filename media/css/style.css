@@ -1,0 +1,404 @@
+@import url("http://fonts.googleapis.com/css?family=Anton|Alegreya+Sans:100,400,700,800,900");
+@import url("http://fonts.googleapis.com/css?family=Wire+One");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?33951238");
+  src: url("../font/fontello.eot?33951238#iefix") format("embedded-opentype"), url("../font/fontello.woff?33951238") format("woff"), url("../font/fontello.ttf?33951238") format("truetype"), url("../font/fontello.svg?33951238#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  width: 100%; }
+
+#main #wrapper {
+  margin: 0px auto;
+  width: 960px;
+  position: relative; }
+  #main #wrapper section {
+    position: relative; }
+  #main #wrapper .star-5:after {
+    margin-left: 10px;
+    font-family: 'fontello';
+    content: '\e800\e800\e800\e800\e800'; }
+  #main #wrapper .star-4:after {
+    margin-left: 10px;
+    font-family: 'fontello';
+    content: '\e800\e800\e800\e800\e802'; }
+  #main #wrapper .star-3:after {
+    margin-left: 10px;
+    font-family: 'fontello';
+    content: '\e800\e800\e800\e801\e802'; }
+  #main #wrapper .grid-1 {
+    position: relative;
+    width: 300px;
+    float: left; }
+    #main #wrapper .grid-1:after {
+      content: ".";
+      visibility: hidden; }
+  #main #wrapper .grid-2 {
+    position: relative;
+    width: 360px;
+    float: left; }
+  #main #wrapper .grid-3 {
+    position: relative;
+    width: 300px;
+    float: left; }
+    #main #wrapper .grid-3:after {
+      content: ".";
+      visibility: hidden; }
+  #main #wrapper .text {
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    font-size: 90px; }
+    #main #wrapper .text .smaller, #main #wrapper .text .bigger {
+      display: inline-block;
+      text-transform: uppercase; }
+  #main #wrapper .bubble-l {
+    position: relative;
+    top: 10px;
+    right: 12px;
+    float: right; }
+    #main #wrapper .bubble-l.bubble {
+      padding: 10px;
+      position: relative; }
+      #main #wrapper .bubble-l.bubble:after {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        display: block;
+        width: 0;
+        z-index: 1;
+        border-width: 0px 0 15px 11px; }
+  #main #wrapper .bubble-r {
+    position: relative;
+    left: 12px;
+    float: left; }
+    #main #wrapper .bubble-r.bubble {
+      padding: 10px;
+      position: relative; }
+      #main #wrapper .bubble-r.bubble:after {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        display: block;
+        width: 0;
+        z-index: 1;
+        border-width: 0px 11px 15px 0; }
+  #main #wrapper .about {
+    position: relative;
+    clear: both;
+    top: 0; }
+    #main #wrapper .about .bubble-l {
+      text-align: center;
+      top: 45px; }
+      #main #wrapper .about .bubble-l.bubble {
+        width: 70px;
+        height: 55px;
+        padding: 10px;
+        background: #365164;
+        -webkit-border-top-right-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px; }
+        #main #wrapper .about .bubble-l.bubble:after {
+          border-color: transparent #365164;
+          border-width: 15px 0 0px 11px;
+          top: 61px;
+          right: -10px; }
+      #main #wrapper .about .bubble-l p {
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 30px;
+        color: #E6E0D0; }
+    #main #wrapper .about .text p {
+      color: #365164; }
+      #main #wrapper .about .text p .smaller {
+        font-size: 122%;
+        margin-top: -20px; }
+      #main #wrapper .about .text p .bigger {
+        font-size: 148%; }
+    #main #wrapper .about .bubble-r {
+      top: 25px; }
+      #main #wrapper .about .bubble-r.bubble {
+        width: 140px;
+        height: 170px;
+        padding: 10px;
+        background: #365164;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px; }
+        #main #wrapper .about .bubble-r.bubble:after {
+          border-color: transparent #365164;
+          top: 176px;
+          left: -10px;
+          border-width: 15px 11px 0px 0; }
+      #main #wrapper .about .bubble-r .selfie {
+        width: 140px;
+        height: auto; }
+  #main #wrapper .details {
+    clear: both;
+    position: relative;
+    top: -15px; }
+    #main #wrapper .details .bubble-l.bubble {
+      width: 240px;
+      height: 125px;
+      padding: 10px;
+      background: #82a302;
+      -webkit-border-top-left-radius: 10px;
+      -webkit-border-bottom-right-radius: 10px;
+      -moz-border-radius-topleft: 10px;
+      -moz-border-radius-bottomright: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      #main #wrapper .details .bubble-l.bubble:after {
+        border-color: transparent #82a302;
+        top: 0px;
+        right: -10px; }
+    #main #wrapper .details .bubble-l ul li {
+      color: #6B6152;
+      font-size: 16px;
+      line-height: 22px;
+      font-family: 'Alegreya Sans', sans-serif; }
+      #main #wrapper .details .bubble-l ul li span {
+        text-transform: uppercase;
+        display: inline-block;
+        width: 110px;
+        margin-right: 10px; }
+    #main #wrapper .details .text p {
+      color: #82a302; }
+      #main #wrapper .details .text p .smaller {
+        font-size: 107%; }
+      #main #wrapper .details .text p .bigger {
+        font-size: 138%;
+        margin-top: -20px; }
+  #main #wrapper .employment {
+    position: relative;
+    clear: both;
+    top: -45px; }
+    #main #wrapper .employment .text p {
+      color: #00b9bd; }
+      #main #wrapper .employment .text p .smaller {
+        font-size: 79%; }
+      #main #wrapper .employment .text p .bigger {
+        font-size: 131%;
+        margin-top: -20px; }
+    #main #wrapper .employment .bubble-r {
+      top: 25px; }
+      #main #wrapper .employment .bubble-r.bubble {
+        width: 240px;
+        height: 225px;
+        padding: 10px;
+        background: #00b9bd;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px; }
+        #main #wrapper .employment .bubble-r.bubble:after {
+          border-color: transparent #00b9bd;
+          top: 0px;
+          left: -10px; }
+      #main #wrapper .employment .bubble-r .selfie {
+        color: #6B6152;
+        font-size: 14px;
+        line-height: 22px;
+        font-family: 'Alegreya Sans', sans-serif;
+        margin: 5px 0; }
+        #main #wrapper .employment .bubble-r .selfie span {
+          font-size: 16px;
+          font-weight: bold;
+          display: block; }
+  #main #wrapper .education {
+    position: relative;
+    clear: both;
+    top: -120px; }
+    #main #wrapper .education .bubble-l.bubble {
+      width: 240px;
+      height: 140px;
+      background: #ff9e9d;
+      -webkit-border-top-left-radius: 10px;
+      -webkit-border-bottom-right-radius: 10px;
+      -moz-border-radius-topleft: 10px;
+      -moz-border-radius-bottomright: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      #main #wrapper .education .bubble-l.bubble:after {
+        top: 0px;
+        right: -10px;
+        border-color: transparent #ff9e9d; }
+    #main #wrapper .education .bubble-l .selfie {
+      color: #6B6152;
+      font-size: 14px;
+      line-height: 22px;
+      font-family: 'Alegreya Sans', sans-serif;
+      margin: 5px 0; }
+      #main #wrapper .education .bubble-l .selfie span {
+        font-weight: bold; }
+    #main #wrapper .education .text p {
+      color: #ff9e9d; }
+      #main #wrapper .education .text p .bigger {
+        font-size: 100%; }
+  #main #wrapper .p-skills {
+    position: relative;
+    clear: both;
+    top: -202px; }
+    #main #wrapper .p-skills .text p {
+      color: #F07C19; }
+      #main #wrapper .p-skills .text p .smaller {
+        font-size: 108%; }
+      #main #wrapper .p-skills .text p .bigger {
+        font-size: 162%;
+        margin-top: -20px; }
+    #main #wrapper .p-skills .bubble-r {
+      top: 85px; }
+      #main #wrapper .p-skills .bubble-r.bubble {
+        width: 240px;
+        height: 130px;
+        padding: 10px;
+        background: #F07C19;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px; }
+        #main #wrapper .p-skills .bubble-r.bubble:after {
+          border-color: transparent #F07C19;
+          top: 0px;
+          left: -10px; }
+      #main #wrapper .p-skills .bubble-r ul li {
+        color: #E6E0D0;
+        font-size: 14px;
+        line-height: 22px;
+        font-family: 'Alegreya Sans', sans-serif; }
+        #main #wrapper .p-skills .bubble-r ul li span {
+          width: 130px;
+          display: inline-block;
+          text-transform: uppercase; }
+  #main #wrapper .t-skills {
+    position: relative;
+    clear: both;
+    top: -218px; }
+    #main #wrapper .t-skills .bubble-l.bubble {
+      width: 240px;
+      height: 155px;
+      padding: 10px;
+      background: #ffc219;
+      -webkit-border-top-left-radius: 10px;
+      -webkit-border-bottom-right-radius: 10px;
+      -moz-border-radius-topleft: 10px;
+      -moz-border-radius-bottomright: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      #main #wrapper .t-skills .bubble-l.bubble:after {
+        border-color: transparent #ffc219;
+        top: 0px;
+        right: -10px; }
+      #main #wrapper .t-skills .bubble-l.bubble ul li {
+        color: #6B6152;
+        font-size: 14px;
+        line-height: 22px;
+        font-family: 'Alegreya Sans', sans-serif; }
+        #main #wrapper .t-skills .bubble-l.bubble ul li span {
+          width: 130px;
+          display: inline-block;
+          text-transform: uppercase; }
+    #main #wrapper .t-skills .text p {
+      color: #ffc219; }
+      #main #wrapper .t-skills .text p .smaller {
+        font-size: 101%; }
+      #main #wrapper .t-skills .text p .bigger {
+        font-size: 162%;
+        margin-top: -20px; }
+  #main #wrapper .contact {
+    position: relative;
+    clear: both;
+    top: -243px; }
+    #main #wrapper .contact .text p {
+      color: #365164; }
+      #main #wrapper .contact .text p .smaller {
+        font-size: 173%; }
+      #main #wrapper .contact .text p .bigger {
+        font-size: 168%;
+        margin-top: -28px; }
+    #main #wrapper .contact .bubble-r {
+      top: 20px; }
+      #main #wrapper .contact .bubble-r.bubble {
+        width: 240px;
+        height: 85px;
+        padding: 10px;
+        background: #365164;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px; }
+        #main #wrapper .contact .bubble-r.bubble:after {
+          border-color: transparent #365164;
+          top: 0px;
+          left: -10px; }
+      #main #wrapper .contact .bubble-r ul li {
+        color: #E6E0D0;
+        font-size: 14px;
+        line-height: 22px;
+        font-family: 'Alegreya Sans', sans-serif; }
+        #main #wrapper .contact .bubble-r ul li span {
+          width: 100px;
+          display: inline-block;
+          text-transform: uppercase; }
+        #main #wrapper .contact .bubble-r ul li a {
+          color: #E6E0D0;
+          text-decoration: none; }
