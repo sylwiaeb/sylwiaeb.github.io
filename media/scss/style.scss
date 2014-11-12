@@ -509,18 +509,21 @@ only screen and (min-device-pixel-ratio : 1.5)
     width: 600px;
     margin: 20px auto 0 auto;
 
-    .test-ads {
-        font-size: 40px;
+    h1 {
         margin-bottom: 20px;
+        font-size: 40px;
         color: #556270;
         font-family: "anton";
     }
 
-    .msg, li {
+    h2, li {
         color: rgb(85,98,112);
         font-size: 16px;
     }
 
+    h2 {
+        margin: 20px 0 5px 0;
+    }
     ul {
         margin-left: 20px;
         li {
@@ -531,7 +534,7 @@ only screen and (min-device-pixel-ratio : 1.5)
         font-weight: 700;
         color: #FF6B6B;
     }
-    #ads-erik {
+    .ad-container {
         margin: 20px 0;
     }
 }

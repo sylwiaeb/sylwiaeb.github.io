@@ -20,7 +20,18 @@
 
     <script>
         googletag.cmd.push(function() {
-            googletag.defineSlot("/104818892/trove.com/", [300,250], "ads-erik")
+            googletag.defineSlot("/104818892/trove.com/", [300,250], "ads-eril-1")
+            .addService(googletag.pubads())
+            .setTargeting("big_test_ad", "1")
+            .setCollapseEmptyDiv(true, true);
+
+            googletag.enableServices();
+        });
+    </script>
+
+    <script>
+        googletag.cmd.push(function() {
+            googletag.defineSlot("/104818892/trove.com/", [300,250], "ads-erik-2")
             .addService(googletag.pubads())
             .setTargeting("source", "1234")
             .setTargeting("login", "1")
@@ -33,16 +44,27 @@
             .setCollapseEmptyDiv(true, true);
 
             googletag.enableServices();
-
         });
     </script>
 </head>
 <body>
 <div id="main">
-    <h1 class="test-ads">Ads for Erik</h1>
-    <h2 class="msg">So here you should see the ad which meets the following criteria:</h2>
+    <h1>Ads for Erik</h1>
+    <h2 class="msg">1. Ad which meets the following criteria:</h2>
     <ul>
-        <!--<li><strong>big_test_tag</strong> is <strong>1</strong></li>-->
+        <li><strong>big_test_tag</strong> is <strong>1</strong></li>
+    </ul>
+
+    <div id="ads-erik-1" class="ad-container">
+        <script>
+            googletag.cmd.push(function() {
+                googletag.display("ads-erik-1");
+            });
+        </script>
+    </div>
+
+    <h2>2. Ad which meets the following criteria:</h2>
+    <ul>
         <li><strong>source</strong> is <strong>1234</strong></li>
         <li><strong>login</strong> is <strong>1</strong></li>
         <li><strong>curator</strong> is <strong>1</strong></li>
@@ -51,11 +73,10 @@
         <li><strong>treatment</strong> is <strong>default</strong></li>
         <li><strong>streamType</strong> is <strong>system</strong></li>
     </ul>
-
-    <div id="ads-erik">
+    <div id="ads-erik-2" class="ad-container">
         <script>
             googletag.cmd.push(function() {
-                googletag.display("ads-erik");
+                googletag.display("ads-erik-2");
             });
         </script>
     </div>
