@@ -1,9 +1,9 @@
-@import url("http://fonts.googleapis.com/css?family=Anton|Alegreya+Sans:100,400,700,800,900");
-@import url("http://fonts.googleapis.com/css?family=Wire+One");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("http://fonts.googleapis.com/css?family=Anton|Alegreya+Sans:100,400,700,800,900");
+@import url("http://fonts.googleapis.com/css?family=Wire+One");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,7 +53,6 @@ table {
   src: url("../font/fontello.eot?33951238#iefix") format("embedded-opentype"), url("../font/fontello.woff?33951238") format("woff"), url("../font/fontello.ttf?33951238") format("truetype"), url("../font/fontello.svg?33951238#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 body {
   width: 100%; }
 
@@ -402,3 +401,8 @@ body {
         #main #wrapper .contact .bubble-r ul li a {
           color: #E6E0D0;
           text-decoration: none; }
+
+.test-ads {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ff6b6b; }
