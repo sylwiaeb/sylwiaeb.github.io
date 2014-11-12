@@ -505,8 +505,33 @@ only screen and (min-device-pixel-ratio : 1.5)
 }
 
 
-.test-ads {
-    font-size: 40px;
-    margin-bottom: 20px;
-    color: rgb(255,107,107);
+#main {
+    width: 600px;
+    margin: 20px auto 0 auto;
+
+    .test-ads {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: rgb(255,107,107);
+        font-family: "anton";
+    }
+
+    .msg, li {
+        color: rgb(85,98,112);
+        font-size: 16px;
+    }
+
+    ul {
+        margin-left: 20px;
+        li {
+            list-style-type: disc;
+        }
+    }
+    strong {
+        font-weight: 700;
+    }
+    #ads-erik {
+        margin: 20px 0;
+    }
 }
+
