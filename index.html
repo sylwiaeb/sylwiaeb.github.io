@@ -28,7 +28,8 @@
             .setTargeting("relatedChannels", "1234")
             .setTargeting("id", "1234")
             .setTargeting("treatment", "default")
-            .setTargeting("streamType", "seasonal")
+            .setTargeting("streamType", "system")
+            .setTargeting("big_test_ad", "1")
             .setCollapseEmptyDiv(true, true);
 
             googletag.enableServices();
@@ -39,11 +40,18 @@
 <body>
 <div id="main">
     <h1 class="test-ads">Ads for Erik</h1>
-    <h2 class="msg">So here you should see the ad which meets following criteria:</h2>
+    <h2 class="msg">So here you should see the ad which meets the following criteria:</h2>
     <ul>
-        <li><strong>big_test_tag</strong> is <strong>1</strong></li>
-
+        <!--<li><strong>big_test_tag</strong> is <strong>1</strong></li>-->
+        <li><strong>source</strong> is <strong>1234</strong></li>
+        <li><strong>login</strong> is <strong>1</strong></li>
+        <li><strong>curator</strong> is <strong>1</strong></li>
+        <li><strong>relatedChannels</strong> is <strong>1234</strong></li>
+        <li><strong>id</strong> is <strong>1234</strong></li>
+        <li><strong>treatment</strong> is <strong>default</strong></li>
+        <li><strong>streamType</strong> is <strong>system</strong></li>
     </ul>
+
     <div id="ads-erik">
         <script>
             googletag.cmd.push(function() {
