@@ -22,8 +22,7 @@
         googletag.cmd.push(function() {
             googletag.defineSlot("/104818892/trove.com/", [300,250], "ads-erik-1")
             .addService(googletag.pubads())
-            .setTargeting("big_test_tag", "1")
-            .setCollapseEmptyDiv(true, true);
+            .setTargeting("big_test_tag", "1");
 
             googletag.pubads().updateCorrelator();
             googletag.enableServices();
@@ -41,10 +40,9 @@
             .setTargeting("id", "1234")
             .setTargeting("treatment", "default")
             .setTargeting("streamType", "system")
-            .setTargeting("big_test_tag", "1")
-            .setCollapseEmptyDiv(true, true);
+            .setTargeting("big_test_tag", "1");
 
-             googletag.pubads().updateCorrelator();
+            googletag.pubads().updateCorrelator();
             googletag.enableServices();
         });
      console.log('ya');
@@ -76,6 +74,7 @@
         <li><strong>id</strong> is <strong>1234</strong></li>
         <li><strong>treatment</strong> is <strong>default</strong></li>
         <li><strong>streamType</strong> is <strong>system</strong></li>
+        <li><strong>big_test_tag</strong> is <strong>1</strong></li>
     </ul>
     <div id="ads-erik-2" class="ad-container">
         <script>
